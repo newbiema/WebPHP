@@ -1,0 +1,130 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #FFABAB, #FFC3A0); /* Gradient latar belakang */
+            color: #333333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            height: 100vh; /* Memastikan konten berada di tengah layar */
+            align-items: center;
+            margin: 0; /* Menghilangkan margin default */
+        }
+
+        #quiz {
+            background: #FFFFFF; /* Background putih */
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            width: 80%; /* Memperlebar lebar kuis */
+            max-width: 800px; /* Lebar maksimal */
+            text-align: center; /* Rata tengah teks */
+        }
+
+        h1 {
+            color: #D63946; /* Warna merah muda */
+            margin-bottom: 20px; /* Jarak bawah */
+        }
+
+        h2 {
+            color: #333333;
+            text-align: left; /* Rata kiri */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left; /* Rata kiri */
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #D63946; /* Warna tombol */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi efek */
+        }
+
+        button:hover {
+            background-color: #FF6F61; /* Warna saat hover */
+            transform: scale(1.05); /* Efek zoom */
+        }
+
+        .number-column {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Gaya untuk soal yang belum dijawab */
+        .number.unanswered {
+            background-color: #FFDDC1; /* Pastel kuning pucat */
+            color: #D63946;
+        }
+
+        /* Gaya untuk soal yang sudah dijawab */
+        .number.answered {
+            background-color: #D63946;
+            color: #FFFFFF;
+        }
+
+        .final-score {
+            background-color: #FFF3E0;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px auto; /* Rata tengah */
+            width: 80%; /* Lebar maksimal */
+        }
+
+        .final-score h1 {
+            color: #D63946;
+        }
+
+        .final-score h2 {
+            color: #333333;
+        }
+
+        .question-container {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: #D63946; /* Warna nomor soal */
+            margin-bottom: 10px; /* Jarak antara nomor dan pertanyaan */
+        }
